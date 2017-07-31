@@ -3,7 +3,7 @@ import {Router} from '@angular/router';
 
 @Component({
   selector: 'header-component',
-  styles: ['.contact-list { list-style-type:none; } .contact-text{color:#f0ad4e;} .contact-strong{color:white;}'],
+  styles: ['.btn-secondary.active { color:white; background-color: #f0ad4e;} .contact-list { list-style-type:none; }  .contact-text{color:#f0ad4e;} .contact-strong{color:white;}'],
   template: `
   <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,13 +14,13 @@ import {Router} from '@angular/router';
             <div class="collapse navbar-collapse" id="navbarExample">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" routerLink="/home" routerLinkActive="active">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" routerLink="/services" routerLinkActive="active">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -38,13 +38,13 @@ import {Router} from '@angular/router';
                 <hr class="intro-divider">
                 <ul class="list-inline intro-social-buttons">
                     <li class="list-inline-item">
-                        <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">About Us</span></a>
+                        <a routerLink="/home" routerLinkActive="active" class="btn btn-secondary btn-lg"> <span class="network-name">About Us</span></a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Abuse of Process Book</span></a>
+                        <a routerLink="/process" routerLinkActive="active" class="btn btn-secondary btn-lg"> <span class="network-name">Abuse of Process Book</span></a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Our Reputation</span></a>
+                        <a routerLink="/reputation" routerLinkActive="active" class="btn btn-secondary btn-lg"> <span class="network-name">Our Reputation</span></a>
                     </li>
                 </ul>
                 <ul class="list-inline contact-list">

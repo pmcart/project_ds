@@ -19,6 +19,10 @@ nav {
     height: 50px;
 }
 
+.container-fluid {
+    padding: 0px;
+}
+
 .intro-header {
     height: 400px;
     @media(max-width: 1000px) {
@@ -163,4 +167,22 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+
+p.lead-name {
+    font-style: italic;
+}
+
+p.quote-lead {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+p.book-lead {
+    font-size: 20px;
+    color: darkgoldenrod;
+    strong {
+        font-style: italic;
+    }
 }

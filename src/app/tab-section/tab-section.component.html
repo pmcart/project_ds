@@ -1,0 +1,45 @@
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+        <div (click)="tabShow=1" class="nav-link">LITIGATION</div>
+    </li>
+    <li class="nav-item">
+        <div (click)="tabShow=2" class="nav-link">COMMERCIAL, BUSINESS AND INSOLVENCY LAW</div>
+    </li>
+    <li class="nav-item">
+        <div (click)="tabShow=3" class="nav-link">EMPLOYMENT LAW</div>
+    </li>
+    <li class="nav-item">
+        <div (click)="tabShow=4" class="nav-link">WILLS, PROBATE AND ADMINISTRATION OF ESTATES</div>
+    </li>
+
+</ul>
+
+
+
+<ul class="nav justify-content-center">
+
+    <li class="nav-item">
+        <div (click)="tabShow=5" class="nav-link">CONVEYANCING</div>
+    </li>
+    <li class="nav-item">
+        <div (click)="tabShow=6" class="nav-link">CONSTRUCTION LAW</div>
+    </li>
+    <li class="nav-item">
+        <div (click)="tabShow=7" class="nav-link">PLANNING LAW</div>
+    </li>
+    <li class="nav-item">
+        <div (click)="tabShow=8" class="nav-link">LANDLORD AND TENANT LAW</div>
+    </li>
+
+</ul>
+
+<div class="tab-content">
+    <div *ngIf="tabShow==1" id="block1" role="tabpanel">...</div>
+    <div *ngIf="tabShow==2" id="block2" role="tabpanel">paddy</div>
+    <div *ngIf="tabShow==3" id="messages" role="tabpanel">...</div>
+    <div *ngIf="tabShow==4" id="settings" role="tabpanel">...</div>
+    <div *ngIf="tabShow==5" id="block1" role="tabpanel">...</div>
+    <div *ngIf="tabShow==6" id="block2" role="tabpanel">paddy</div>
+    <div *ngIf="tabShow==7" id="messages" role="tabpanel">...</div>
+    <div *ngIf="tabShow==8" id="settings" role="tabpanel">...</div>
+</div>
