@@ -22,6 +22,9 @@ import {Router} from '@angular/router';
                     <li class="nav-item">
                         <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
                     </li>
+                    <li class="nav-item">
+ 
+                    </li>
                 </ul>
             </div>
        
@@ -38,7 +41,7 @@ import {Router} from '@angular/router';
                 <hr class="intro-divider">
                 <ul class="list-inline intro-social-buttons">
                     <li class="list-inline-item">
-                        <a routerLink="/home" routerLinkActive="active" class="btn btn-secondary btn-lg"> <span class="network-name">About Us</span></a>
+                        <a routerLink="/home" routerLinkActive="active" class="btn btn-secondary btn-lg"> <span class="network-name">About Us and Our Services</span></a>
                     </li>
                     <li class="list-inline-item">
                         <a routerLink="/process" routerLinkActive="active" class="btn btn-secondary btn-lg"> <span class="network-name">Abuse of Process Book</span></a>

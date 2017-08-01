@@ -5,6 +5,7 @@ import {Component} from '@angular/core';
   selector: 'my-app',
   template: `
     <maincontainer></maincontainer>
+    
   `
 })
 export class AppComponent {

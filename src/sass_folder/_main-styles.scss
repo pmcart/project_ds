@@ -186,3 +186,36 @@ p.book-lead {
         font-style: italic;
     }
 }
+
+p.tab-panel-text {
+    color: #5c5c5c;
+}
+
+.tab-content {
+    ul {
+        list-style: none;
+        li {
+            font-size: 18px;
+        }
+        .grey-text {
+            color: #5c5c5c;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.nav-tab-component {
+    li {
+        cursor: pointer;
+        .active {
+            color: white;
+            background-color: #f0ad4e;
+        }
+    }
+}
+
+.tab-block {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
