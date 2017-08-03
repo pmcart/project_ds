@@ -20,7 +20,11 @@ nav {
 }
 
 .container-fluid {
-    padding: 0px;
+    //padding: 0px;
+}
+
+.noPadding {
+    padding: 0 !important;
 }
 
 .intro-header {
@@ -218,4 +222,23 @@ p.tab-panel-text {
 .tab-block {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.tab-service:hover {
+    color: #f0ad4e;
+}
+
+.contact-details {
+    div {
+        margin-bottom: 10px;
+        display: flex;
+        margin-top: 10px;
+        p {
+            float: left;
+            font-size: 22px;
+        }
+        a {
+            font-size: 22px;
+        }
+    }
 }

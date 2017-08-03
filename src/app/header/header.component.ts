@@ -14,10 +14,7 @@ import {Router} from '@angular/router';
             <div class="collapse navbar-collapse" id="navbarExample">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" routerLink="/home" routerLinkActive="active">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink="/services" routerLinkActive="active">Services</a>
+                        <a class="nav-link" routerLink="/home" routerLinkActive="active">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
