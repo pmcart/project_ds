@@ -6005,8 +6005,11 @@ h6 {
 nav {
   height: 50px; }
 
-.container-fluid {
-  padding: 0px; }
+.list-inline-item {
+  margin-top: 10px; }
+
+.noPadding {
+  padding: 0 !important; }
 
 .intro-header {
   height: 400px;
@@ -6037,7 +6040,7 @@ nav {
 .intro-message > h1 {
   margin: 0;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-  font-size: 5em; }
+  font-size: 4em; }
 
 .intro-divider {
   width: 400px;
@@ -6154,12 +6157,38 @@ p.tab-panel-text {
 
 .nav-tab-component li {
   cursor: pointer; }
+  @media (max-width: 700px) {
+    .nav-tab-component li {
+      font-size: 10px; } }
   .nav-tab-component li .active {
     color: white;
     background-color: #f0ad4e; }
+
+.mobile-nav .mobile-tab {
+  cursor: pointer; }
+
+.mobile-nav .mobile-tab:hover {
+  color: black; }
+
+.mobile-nav .active {
+  color: white;
+  background-color: #f0ad4e; }
 
 .tab-block {
   margin-top: 30px;
   margin-bottom: 30px; }
 
-/*# sourceMappingURL=styles.e078f6dc9f1cff6123b6.css.map*/
+.tab-service:hover {
+  color: #f0ad4e; }
+
+.contact-details div {
+  margin-bottom: 10px;
+  display: flex;
+  margin-top: 10px; }
+  .contact-details div p {
+    float: left;
+    font-size: 22px; }
+  .contact-details div a {
+    font-size: 22px; }
+
+/*# sourceMappingURL=styles.5671011175c55b05f587.css.map*/

@@ -1,4 +1,4 @@
-<ul class="nav justify-content-center nav-tab-component">
+<ul class="nav justify-content-center nav-tab-component hidden-sm-down">
     <li class="nav-item">
         <div (click)="tabShow=1" [ngClass]="{'active': tabShow==1}" class="nav-link tab-service">LITIGATION</div>
     </li>
@@ -16,7 +16,7 @@
 
 
 
-<ul class="nav justify-content-center nav-tab-component">
+<ul class="nav justify-content-center nav-tab-component hidden-sm-down">
 
     <li class="nav-item">
         <div (click)="tabShow=5" [ngClass]="{'active': tabShow==5}" class="nav-link tab-service">CONVEYANCING</div>
@@ -32,6 +32,28 @@
     </li>
 
 </ul>
+
+<div class="hidden-md-up mobile-nav">
+
+    <div (click)="tabShow=1" [ngClass]="{'active': tabShow==1}" class="nav-link tab-service mobile-tab">LITIGATION</div>
+
+    <div (click)="tabShow=2" [ngClass]="{'active': tabShow==2}" class="nav-link tab-service mobile-tab">COMMERCIAL, BUSINESS AND INSOLVENCY LAW</div>
+
+    <div (click)="tabShow=3" [ngClass]="{'active': tabShow==3}" class="nav-link tab-service mobile-tab">EMPLOYMENT LAW</div>
+
+
+    <div (click)="tabShow=4" [ngClass]="{'active': tabShow==4}" class="nav-link tab-service mobile-tab">WILLS, PROBATE AND ADMINISTRATION OF ESTATES</div>
+
+    <div (click)="tabShow=5" [ngClass]="{'active': tabShow==5}" class="nav-link tab-service mobile-tab">CONVEYANCING</div>
+
+    <div (click)="tabShow=6" [ngClass]="{'active': tabShow==6}" class="nav-link tab-service mobile-tab">CONSTRUCTION LAW</div>
+
+    <div (click)="tabShow=7" [ngClass]="{'active': tabShow==7}" class="nav-link tab-service mobile-tab">PLANNING LAW</div>
+
+    <div (click)="tabShow=8" [ngClass]="{'active': tabShow==8}" class="nav-link tab-service mobile-tab">LANDLORD AND TENANT LAW</div>
+
+
+</div>
 
 <div class="row">
     <div class="col-md-8 offset-md-2">
