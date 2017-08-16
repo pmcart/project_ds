@@ -1,0 +1,292 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+nav {
+    height: 50px;
+}
+
+.list-inline-item {
+    margin-top: 10px;
+}
+
+.noPadding {
+    padding: 0 !important;
+}
+
+.intro-header {
+    height: 400px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+@media (max-width: 1000px) {
+    .intro-header {
+        height: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    .intro-header {
+        height: 600px;
+    }
+}
+
+@media (max-width: 500px) {
+    .intro-header {
+        height: 650px;
+    }
+}
+
+@media (max-width: 450px) {
+    .intro-header {
+        height: 700px;
+    }
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 20%;
+}
+
+.intro-message>h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 4em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.intro-message>h3 {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+    .intro-message>h1 {
+        font-size: 3em;
+    }
+    ul.intro-social-buttons>li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    ul.intro-social-buttons>li:last-child {
+        margin-bottom: 0;
+    }
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 3em;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media (max-width: 1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+        font-size: 3em;
+    }
+    ul.banner-social-buttons>li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    ul.banner-social-buttons>li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+p.lead-name {
+    font-style: italic;
+}
+
+p.quote-lead {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+p.book-lead {
+    font-size: 20px;
+    color: darkgoldenrod;
+}
+
+p.book-lead strong {
+    font-style: italic;
+}
+
+p.tab-panel-text {
+    color: #5c5c5c;
+}
+
+.tab-content ul {
+    list-style: none;
+}
+
+.tab-content ul li {
+    font-size: 18px;
+}
+
+.tab-content ul .grey-text {
+    color: #5c5c5c;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-tab-component li {
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .nav-tab-component li {
+        font-size: 10px;
+    }
+}
+
+.nav-tab-component li .active {
+    color: white;
+    background-color: #f0ad4e;
+}
+
+.mobile-nav .mobile-tab {
+    cursor: pointer;
+}
+
+.mobile-nav .mobile-tab:hover {
+    color: black;
+}
+
+.mobile-nav .active {
+    color: white;
+    background-color: #f0ad4e;
+}
+
+.tab-block {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tab-service:hover {
+    color: #f0ad4e;
+}
+
+.contact-details div {
+    margin-bottom: 10px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.contact-details div p {
+    float: left;
+    font-size: 22px;
+}
+
+.contact-details div a {
+    font-size: 22px;
+}
+
+.btn-secondary.active {
+    color: white;
+    background-color: #f0ad4e;
+}
+
+.contact-list {
+    list-style-type: none;
+}
+
+.contact-text {
+    color: #f0ad4e;
+}
+
+.contact-strong {
+    color: white;
+}
