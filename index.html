@@ -36,13 +36,13 @@
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li class="list-inline-item">
-                                <a class="btn btn-secondary btn-lg active"> <span class="network-name">About Us and Our Services</span></a>
+                                <a href="#services" class="btn btn-secondary btn-lg"> <span class="network-name">About Us and Our Services</span></a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="btn btn-secondary btn-lg"> <span class="network-name">Abuse of Process Book</span></a>
+                                <a href="#abuseofprocess" class="btn btn-secondary btn-lg"> <span class="network-name">Abuse of Process Book</span></a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="btn btn-secondary btn-lg"> <span class="network-name">Our Reputation</span></a>
+                                <a href="#reputation" class="btn btn-secondary btn-lg"> <span class="network-name">Our Reputation</span></a>
                             </li>
                         </ul>
                         <ul class="list-inline contact-list">
@@ -78,22 +78,23 @@
                 </div>
                 <!-- /.container -->
             </section>
-            <section class="content-section-b">
+            <section class="content-section-b" id="services">
                 <div class="">
                     <div class="col-lg-12 text-center">
                         <h1>Our Services</h1>
+                        <p style="font-style:italtic;">Click each service to find out more</p>
                         <ul class="nav justify-content-center nav-tab-component hidden-sm-down">
                             <li class="nav-item">
-                                <div (click)="tabShow=1" [ngClass]="{'active': tabShow==1}" class="nav-link tab-service">LITIGATION</div>
+                                <div id="tab1" class="nav-link tab-service">LITIGATION</div>
                             </li>
                             <li class="nav-item">
-                                <div (click)="tabShow=2" [ngClass]="{'active': tabShow==2}" class="nav-link tab-service">COMMERCIAL, BUSINESS AND INSOLVENCY LAW</div>
+                                <div id="tab2" class="nav-link tab-service">COMMERCIAL, BUSINESS AND INSOLVENCY LAW</div>
                             </li>
                             <li class="nav-item">
-                                <div (click)="tabShow=3" [ngClass]="{'active': tabShow==3}" class="nav-link tab-service">EMPLOYMENT LAW</div>
+                                <div id="tab3" class="nav-link tab-service">EMPLOYMENT LAW</div>
                             </li>
                             <li class="nav-item">
-                                <div (click)="tabShow=4" [ngClass]="{'active': tabShow==4}" class="nav-link tab-service">WILLS, PROBATE AND ADMINISTRATION OF ESTATES</div>
+                                <div id="tab4" class="nav-link tab-service">WILLS, PROBATE AND ADMINISTRATION OF ESTATES</div>
                             </li>
 
                         </ul>
@@ -103,38 +104,38 @@
                         <ul class="nav justify-content-center nav-tab-component hidden-sm-down">
 
                             <li class="nav-item">
-                                <div (click)="tabShow=5" [ngClass]="{'active': tabShow==5}" class="nav-link tab-service">CONVEYANCING</div>
+                                <div id="tab5" class="nav-link tab-service">CONVEYANCING</div>
                             </li>
                             <li class="nav-item">
-                                <div (click)="tabShow=6" [ngClass]="{'active': tabShow==6}" class="nav-link tab-service">CONSTRUCTION LAW</div>
+                                <div id="tab6" class="nav-link tab-service">CONSTRUCTION LAW</div>
                             </li>
                             <li class="nav-item">
-                                <div (click)="tabShow=7" [ngClass]="{'active': tabShow==7}" class="nav-link tab-service">PLANNING LAW</div>
+                                <div id="tab7" class="nav-link tab-service">PLANNING LAW</div>
                             </li>
                             <li class="nav-item">
-                                <div (click)="tabShow=8" [ngClass]="{'active': tabShow==8}" class="nav-link tab-service">LANDLORD AND TENANT LAW</div>
+                                <div id="tab8" class="nav-link tab-service">LANDLORD AND TENANT LAW</div>
                             </li>
 
                         </ul>
 
                         <div class="hidden-md-up mobile-nav">
 
-                            <div (click)="tabShow=1" [ngClass]="{'active': tabShow==1}" class="nav-link tab-service mobile-tab">LITIGATION</div>
+                            <div id="mob1" class="nav-link tab-service mobile-tab">LITIGATION</div>
 
-                            <div (click)="tabShow=2" [ngClass]="{'active': tabShow==2}" class="nav-link tab-service mobile-tab">COMMERCIAL, BUSINESS AND INSOLVENCY LAW</div>
+                            <div id="mob2" class="nav-link tab-service mobile-tab">COMMERCIAL, BUSINESS AND INSOLVENCY LAW</div>
 
-                            <div (click)="tabShow=3" [ngClass]="{'active': tabShow==3}" class="nav-link tab-service mobile-tab">EMPLOYMENT LAW</div>
+                            <div id="mob3" class="nav-link tab-service mobile-tab">EMPLOYMENT LAW</div>
 
 
-                            <div (click)="tabShow=4" [ngClass]="{'active': tabShow==4}" class="nav-link tab-service mobile-tab">WILLS, PROBATE AND ADMINISTRATION OF ESTATES</div>
+                            <div id="mob4" class="nav-link tab-service mobile-tab">WILLS, PROBATE AND ADMINISTRATION OF ESTATES</div>
 
-                            <div (click)="tabShow=5" [ngClass]="{'active': tabShow==5}" class="nav-link tab-service mobile-tab">CONVEYANCING</div>
+                            <div id="mob5" class="nav-link tab-service mobile-tab">CONVEYANCING</div>
 
-                            <div (click)="tabShow=6" [ngClass]="{'active': tabShow==6}" class="nav-link tab-service mobile-tab">CONSTRUCTION LAW</div>
+                            <div id="mob6" class="nav-link tab-service mobile-tab">CONSTRUCTION LAW</div>
 
-                            <div (click)="tabShow=7" [ngClass]="{'active': tabShow==7}" class="nav-link tab-service mobile-tab">PLANNING LAW</div>
+                            <div id="mob7" class="nav-link tab-service mobile-tab">PLANNING LAW</div>
 
-                            <div (click)="tabShow=8" [ngClass]="{'active': tabShow==8}" class="nav-link tab-service mobile-tab">LANDLORD AND TENANT LAW</div>
+                            <div id="mob8" class="nav-link tab-service mobile-tab">LANDLORD AND TENANT LAW</div>
 
 
                         </div>
@@ -144,7 +145,7 @@
                                 <hr>
                                 <div class="tab-content">
 
-                                    <div *ngIf="tabShow==1" id="LITIGATION" role="tabpanel">
+                                    <div role="tabpanel" id="tabpanel1" class="tabpanel">
                                         <p class="tab-panel-text">We specialise in Circuit Court and High Court litigation. We act for a number of major companies and provide practical specialised advice. Our Mr Shiels is the author of the litigation textbook, Abuse of Process:
                                             Unjust and improper conduct of Civil Litigation in Ireland, published in May 2002 (foreword by the then Chief Justice of the Supreme Court, Mr Justice Ronan Keane). He has been widely published in litigation
                                             matters and quoted as an authority in various High Court judgments and periodical articles.
@@ -163,7 +164,7 @@
                                         </p>
                                     </div>
 
-                                    <div *ngIf="tabShow==2" id="COMMERCIAL" role="tabpanel">
+                                    <div role="tabpanel" id="tabpanel2" class="tabpanel">
                                         <p>Prior to returning to work in Donegal, Dessie Shiels trained and worked for Ireland's leading commercial law firm for 5 years and has acted for many of Irelands largest companies</p>
                                         <div class="tab-block">
                                             <h4>Transfer of Businesses, Share Purchase and Acquisitions </h4>
@@ -197,7 +198,7 @@
                                         </div>
                                     </div>
 
-                                    <div *ngIf="tabShow==3" id="EMPLOYMENT" role="tabpanel">
+                                    <div id="tabpanel3" role="tabpanel" class="tabpanel">
 
                                         <p class="tab-panel-text">We act for a number of nationwide employers advising on all areas of employment law.We provide comprehensive advice regarding employee/ employer rights and obligations. </p>
 
@@ -230,7 +231,7 @@
                                         <p class="tab-panel-text">Employment litigation including executive shareholders disputes, High Court Judicial Review and injunctions.
                                         </p>
                                     </div>
-                                    <div *ngIf="tabShow==4" id="WILLS" role="tabpanel">
+                                    <div id="tabpanel4" role="tabpanel" class="tabpanel">
                                         <p>It is important to make a will in order to ensure that your assets and affairs are distributed as you wish upon death. For married couples with young children a will is also important to appoint suitable guardians
                                             for the children of a couple. Wills can be straightforward or more complicated depending on a person's particular circumstances. For example it may be necessary to advise on matters such as the differences between
                                             Intestate and Testate Law, the different shares that arise in a particular estate or a spouse's right to a legal right share. We provide practical, guided and quality legal advice in this area.</p>
@@ -254,7 +255,7 @@
                                             <li>Beneficiary rights in relation to estates and trusts </li>
                                         </ul>
                                     </div>
-                                    <div *ngIf="tabShow==5" id="CONVEYANCING" role="tabpanel">
+                                    <div id="tabpanel5" role="tabpanel" class="tabpanel">
 
                                         <h4>Conveyancing of Private Houses and Residential Property</h4>
 
@@ -287,7 +288,7 @@
                                             <li class="grey-text">Title issues </li>
                                         </ul>
                                     </div>
-                                    <div *ngIf="tabShow==6" id="block2" role="tabpanel">
+                                    <div id="tabpanel6" role="tabpanel" class="tabpanel">
 
                                         <p class="lead">
                                             Dessie Shiels has lectured in Construction Law and contract administration in Trinity College Dublin.
@@ -316,7 +317,7 @@
                                         </p>
 
                                     </div>
-                                    <div *ngIf="tabShow==7" id="messages" role="tabpanel">
+                                    <div id="tabpanel7" role="tabpanel" class="tabpanel">
 
                                         <p>Our firm has a particular expertise in planning law and Dessie Shiels is widely published on planning law and acknowledged as an expert in planning appeals and judicial reviews. We are recommended as experts in
                                             the area. </p>
@@ -337,7 +338,7 @@
                                         <p>We also deal with Judicial Review cases on Planning Decisions. </p>
                                         <br>
                                     </div>
-                                    <div *ngIf="tabShow==8" id="settings" role="tabpanel">
+                                    <div id="tabpanel8" role="tabpanel" class="tabpanel">
                                         <h4>Landlord and Tenant Law</h4>
                                         <p>The law on Landlord and Tenant has had many amendments in recent times and it is therefore of utmost importance that clients have lease agreements properly drafted and reviewed to take account of all the relevant
                                             legislation in this area. We take great time and care in drafting and reviewing client leases to ensure that clients obtain the best from their lease. A well drafted lease is of great assistance to clients should
@@ -363,7 +364,7 @@
                     </div>
                 </div>
             </section>
-            <section class="content-section-a">
+            <section class="content-section-a" id="abuseofprocess">
 
                 <div class="container">
                     <div class="row">
@@ -387,7 +388,7 @@
 
             <aside class="banner">
 
-                <div class="container">
+                <div class="container" id="reputation">
 
                     <div class="row">
                         <div class="col-lg-12">
@@ -444,6 +445,32 @@
     <script src="vendor/tether/tether.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
+    <script>
+        $(document).ready(function() {
+            $('.tabpanel').hide();
+            $('#tabpanel1').show();
+            $('#tab1').addClass('active');
+            $('#mob1').addClass('active');
+            $(".nav-link").click(function() {
+                var numericID = $(this).attr('id');
+                console.log(numericID);
+                var idNumSplit;
+                var idNum;
+                if (numericID.indexOf('tab') != -1) {
+                    idNumSplit = numericID.split('tab');
+
+                } else if (numericID.indexOf('mob') != -1) {
+                    idNumSplit = numericID.split('mob');
+                }
+                idNum = idNumSplit[1];
+                $('.tabpanel').hide();
+                $('#tabpanel' + idNum).show();
+                $('.nav-link').removeClass('active');
+                $('#tab' + idNum).addClass('active');
+                $('#mob' + idNum).addClass('active');
+            });
+        });
+    </script>
 </body>
 
 </html>

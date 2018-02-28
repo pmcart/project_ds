@@ -232,6 +232,11 @@ p.tab-panel-text {
     }
 }
 
+.active {
+    color: white;
+    background-color: #f0ad4e;
+}
+
 .nav-tab-component li .active {
     color: white;
     background-color: #f0ad4e;
