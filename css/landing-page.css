@@ -295,3 +295,7 @@ p.tab-panel-text {
 .contact-strong {
     color: white;
 }
+
+#servicesContainer ul li {
+    list-style: none;
+}
