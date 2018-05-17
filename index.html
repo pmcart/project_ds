@@ -136,7 +136,7 @@
                                         <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
                                     </div>
                                     <div class="form-group">
-                                        <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
+                                        <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="500" rows="7"></textarea>
 
                                     </div>
 
@@ -196,8 +196,31 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/tether/tether.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_0rsdPOooeD6hROBUmzMK4");
+        })();
+    </script>
     <script>
+        $('#submit').on('click', function() {
+
+                emailjs.send("gmail", "mulhernemail", {
+                        from_name: $('#name').val(),
+                        message_html: $('#message').val(),
+                        mobile_number: $('#mobile').val(),
+                        email_address: $('#email').val(),
+                        subject: $('#subject').val(),
+                    })
+                    .then(function(response) {
+                        console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+                    }, function(err) {
+                        console.log("FAILED. error=", err);
+                    });
+            }
+
+        )
+
         $(document).ready(function() {
 
         });
